@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formTest</title>
-    <link rel="stylesheet" href="./css/formTest.css" >
+    <title>register</title>
+    <link rel="stylesheet" href="./css/formTest.css">
 </head>
 <body>
-    <h1>Welcome to Login page</h1>
+    <h1>Welcome to register page</h1>
     <!-- 表单提交区域 -->
     <form id="form1" name="form1" method="post" action="" class="form-container">
+
+        <div class="form-row">
+            <label for="email1" class="form-label">邮箱</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="email" type="email" id="email1" maxlength="50" class="form-input">
+            </div>
+            <br>
+        </div>
+
+        <div class="form-row">
+            <label for="captcha1" class="form-label">验证码</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="captcha" type="text" id="captcha" maxlength="10" class="form-input">
+            </div>
+            <br>
+        </div>
+
         <div class="form-row">
             <label for="username1" class="form-label">用户名</label>
             <div class="form-quotation">:</div>
@@ -40,10 +59,10 @@
         <br>
         <input name="submit" type="submit" value="提交">
         <input name="reset" type="reset" value="重置">
-        <input name="register" type="button" value="前往注册" onclick="window.open('./Register.html')">
+        <input name="login" type="button" value="返回登录" onclick="window.open('./login.html')">
         <input name="edit_info" type="button" value="编辑信息" onclick="window.open('./EditProfile.html')">
         <input name="close" type="button" value="关闭" onclick="window.close()">
     </form>
-
+    
 </body>
 </html>
