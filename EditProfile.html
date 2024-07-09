@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="./css/formTest.css">
+</head>
+<body>
+    <h1>Welcome to formTest page</h1>
+    <!-- 表单提交区域 -->
+    <form id="form1" name="form1" method="post" action="" class="form-container">
+        <div class="form-row">
+            <label for="username1" class="form-label">用户名</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="username" type="text" id="username1" maxlength="20" class="form-input">   
+            </div>
+            <br>
+        </div>
+
+        <div class="form-row">
+            <label for="password1" class="form-label">密码</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="password" type="password" id="password1" maxlength="20">
+            </div>
+            <br>
+        </div>
+
+        <div class="form-row">
+            <label for="confirm_password1" class="form-label">确认密码</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="confirm_password" type="password" id="confirm_password1" maxlength="20">
+            </div>
+            <br>
+        </div>
+
+        <div class="form-row">
+            <label for="sex1" class="form-label">性别</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="sex" type="radio" class="sex" value="male" checked>男 &nbsp;
+                <input name="sex" type="radio" class="sex" value="female">女
+            </div>
+            <br>
+        </div>
+    
+        <div class="form-row">
+            <label for="hobby1" class="form-label">兴趣爱好</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="hobby" type="checkbox" value="reading"> 阅读 &nbsp;
+                <input name="hobby" type="checkbox" value="swimming"> 游泳 &nbsp;
+                <input name="hobby" type="checkbox" value="hiking"> 登山 &nbsp;
+                <input name="hobby" type="checkbox" value="traveling"> 旅行
+            </div>
+            <br>
+        </div>
+    
+        <div class="form-row">
+            <label for="email1" class="form-label">邮箱</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <input name="email" type="email" id="email1" maxlength="50" class="form-input">
+            </div>
+            <br>
+        </div>
+    
+        <div class="form-row">
+            <label for="job1" class="form-label">职业</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <select name="job" id="job1" size="1">
+                    <option value="student">学生</option>
+                    <option value="teacher">教师</option>
+                    <option value="developer">开发者</option>
+                    <option value="manager">经理</option>
+                </select>
+            </div>
+            <br>
+        </div>
+    
+        <div class="form-row">
+            <label for="skill1" class="form-label">基本技能</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <select name="skill1" id="skill1" size="3" multiple>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="jquery">jQuery</option>
+                    <option value="php">PHP</option>
+                    <option value="mysql">MySQL</option>
+                </select>
+            </div>
+            <br>
+        </div>
+    
+        <div class="form-row">
+            <label for="introduction1" class="form-label">自我介绍</label>
+            <div class="form-quotation">:</div>
+            <div class="form-input">
+                <textarea name="introduction" id="introduction1" rows="5" cols="30">这里是默认的自我介绍，你可以在这里写一些关于你的信息。
+                </textarea>
+            </div>
+            <br>
+        </div>
+
+        <br>
+        <input name="submit" type="submit" value="提交">
+        <input name="reset" type="reset" value="重置">
+        <input name="check_info" type="button" value="查看" onclick="window.open('./Information.html')">
+        <input name="register" type="button" value="注册" onclick="window.location.href='./Login.html'">
+        <input name="close" type="button" value="关闭" onclick="window.close()">
+    </form>
+</body>
+</html>
