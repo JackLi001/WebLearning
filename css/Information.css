@@ -1,0 +1,24 @@
+/*
+1.margin: 0 auto;：设置元素的左右外边距为自动，使其水平居中。
+2.border: 1px solid black;：设置元素的边框为1像素宽的实线黑色边框。
+3.text-align: center;：设置元素内的文本水平居中对齐。
+4.border-collapse: separate;：设置表格边框不合并，保持独立。
+        collapse：相邻单元格的边框合并为一个单一的边框。       
+        separate：相邻单元格的边框分开显示。
+5.border-spacing: 5px;：设置表格单元格之间的间距为5像素。
+*/
+#form-info{
+    width: 500px ;
+    height: 200px ;  
+    margin: 0 auto ;
+    border: 1px solid black;
+    text-align: center ;
+    border-collapse: collapse;
+    /* border-collapse: separate;
+    border-spacing: 1px; */
+}
+
+#form-info td{
+    border: 1px solid black;
+
+}
