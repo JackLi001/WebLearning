@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Time</title>
     <script type="text/javascript" src="../js/RealTime.js"></script>
+    <script type="text/javascript">
+
+        function showTime(clock){
+            var time = updateTime_1();
+            clock.innerHTML = "当前时间:&nbsp" + time;
+        }
+        window.setInterval("showTime(clock)", 1000);
+        
+    </script>
 </head>
 <body>
     

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment</title>
+
+    <script type="text/javascript" src="./js/RealTime.js"></script>
+    <script type="text/javascript" src="./js/Comment.js"></script>
+</head>
+<body>
+
+    <table width="600" border="1" id="commentTable">
+        <thead>
+            <tr>
+                <td width=10%>评论人</td>
+    
+                <td width=63%>评论内容</td>
+    
+                <td width=27%>评论时间</td>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+        
+    </table>
+    <br>
+
+    <form name="commentForm" method="post" action="">
+        评论人：<input type="text" name="commentPerson" size="40">
+        <br>
+        
+        评论内容：<textarea name="commentContent" rows="5" cols="60" maxlength="1000" id="commentContent"></textarea>
+        <br>
+    </form>
+
+    <input type="button" value="提交评论" onclick="addComment()" >
+    <input type="button" value="刷新评论" onclick="refreshComment()" >
+    <input type="button" value="删除评论" onclick="deleteComment()" >
+    <input type="button" value="清空评论" onclick="clearComment()" >
+
+    
+
+</body>
+</html>
