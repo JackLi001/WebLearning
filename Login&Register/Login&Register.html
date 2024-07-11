@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录和注册</title>
+    <link rel="stylesheet"  href="../css/formTest.css">
+    <link rel="stylesheet" href="../comment/commentSection.css">
+    <link rel="stylesheet" href="./Login&Register.css">
+    <script type="text/javascript" src="./Login&Register.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1> Banner 信息区域</h1>
+        </div>
+
+        <div class="main-content">
+            <div class="box">
+
+                <div class="buttons">
+                    <button id="loginBtn" onclick="loginForm()">登录</button>
+                    <button id="registerBtn" onclick="registerForm()">注册</button>
+                </div>
+
+                <div class="login-form active">
+                    <h2>Login </h2>
+                    <!-- 表单提交区域 -->
+                    <form id="form1" name="form1" method="post" action="" class="form-container">
+                        <div class="form-row">
+                            <label for="username1" class="form-label">用户名</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="username" type="text" id="username1" maxlength="20" class="form-input">   
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="password1" class="form-label">密码</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="password" type="password" id="password1" maxlength="20">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="confirm_password1" class="form-label">确认密码</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="confirm_password" type="password" id="confirm_password1" maxlength="20">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <br>
+                        <input name="submit" id="submitBtn" type="submit" value="提交" onclick="submitForm()">
+                        <input name="reset" type="reset" value="重置">
+                        <input name="edit_info" type="button" value="编辑信息" onclick="window.open('../EditProfile.html')">
+                        <input name="close" type="button" value="关闭" onclick="window.close()">
+                    </form>
+                </div>
+
+                <div class="register-form">
+                    <h2>Register</h2>
+                    <!-- 表单提交区域 -->
+                    <form id="form1" name="form1" method="post" action="" class="form-container">
+                
+                        <div class="form-row">
+                            <label for="email1" class="form-label">邮箱</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="email" type="email" id="email1" maxlength="50" class="form-input">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="captcha1" class="form-label">验证码</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="captcha" type="text" id="captcha" maxlength="10" class="form-input">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="username1" class="form-label">用户名</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="username" type="text" id="username1" maxlength="20" class="form-input">   
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="password1" class="form-label">密码</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="password" type="password" id="password1" maxlength="20">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <div class="form-row">
+                            <label for="confirm_password1" class="form-label">确认密码</label>
+                            <div class="form-quotation">:</div>
+                            <div class="form-input">
+                                <input name="confirm_password" type="password" id="confirm_password1" maxlength="20">
+                            </div>
+                            <br>
+                        </div>
+                
+                        <br>
+                        <input name="submit" id="submitBtn" type="submit" value="提交" onclick="submitForm()">
+                        <input name="reset" type="reset" value="重置">
+                        <input name="edit_info" type="button" value="编辑信息" onclick="window.open('../EditProfile.html')">
+                        <input name="close" type="button" value="关闭" onclick="window.close()">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    
+        <div class="footer">
+            <p>Copyright © 2024</p>
+        </div>
+    </div>
+
+</body>
+
+
+
+</html>

@@ -60,3 +60,9 @@ function clearComment(){
         }
     }
 }
+
+function reLogin(){
+    window.open("../Login&Register/Login&Register.html");
+    setTimeout(() => {console.log("停顿0.01秒后再关闭本页面");}, 10);
+    window.close();
+}
