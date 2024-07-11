@@ -1,0 +1,43 @@
+.main-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.box{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+   }
+
+.buttons button{
+    padding: 10px 20px;
+    cursor: pointer;
+ }
+
+ /*
+初始隐藏表单：通过将 .login-form 和 .register-form 的 display 属性设置为 none，
+             确保在页面加载时这两个表单不会显示出来。这样可以避免页面加载时出现不必要的表单元素。
+             
+激活显示表单：通过将 .active 类的 display 属性设置为 block，
+             这意味着当某个元素被添加了 .active 类时，它将会以块级元素的形式显示在页面上。
+             可以在需要时通过 JavaScript 或其他方式动态地为某个表单元素添加 .active 类，从而使其显示出来。
+ */
+
+ .login-form,.register-form{
+    display: none;
+ }
+
+ .active{
+    display: block;
+ }
