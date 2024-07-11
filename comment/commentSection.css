@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*头部区域*/
+
+.header{
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/*主体区域*/
+
+.main-content{
+    background-color: aqua;
+    display: flex;
+    flex: 1;
+}
+.comment{
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+h3{
+    text-align: center;
+}
+
+/*评论区域*/
+.commentContent{
+    background-color: #f9f9f9;
+}
+
+/*评论表单*/
+.commentForm{
+    background-color: #e9e9e9;
+}
+
+.form-container {
+    width: 600px;
+}
+/*
+我们使用了Flexbox布局来实现对齐：
+
+    1.display: flex;：将每一行设置为Flex容器。
+    2.flex: 1;：设置标签的弹性系数，使其占据1份空间。
+    3.flex: 3;：设置输入框的弹性系数，使其占据3份空间。
+*/       
+.form-row {
+    display: flex;/* 定义为弹性布局 */
+    margin-bottom: 10px;/* 底部外边距 */
+    align-items: center;/* 标签和输入框垂直居中对齐 */
+}
+.form-label {
+    flex: 6;/* 定义宽度为1 */
+    text-align:justify;/* 标签的水平对齐方式，使其两端对齐 */
+    text-align-last:justify;/* 标签的最后一行的对齐方式，使其两端对齐 */
+}
+.form-quotation{
+    flex: 1;/* 定义宽度为1 */
+    margin-right: 5px;/* 在标签和输入框之间添加一些间距 */
+}
+.form-input{
+    flex: 43;/* 定义宽度为4 */
+}
+
+/*底部区域*/
+
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

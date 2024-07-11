@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>commentSection</title>
+    <link rel="stylesheet" href="./commentSection.css">
+    <script type="text/javascript" src="../js/RealTime.js"></script>
+    <script  type="text/javascript" src="./Comment.js"></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1> Banner 信息区域</h1>
+        </div>
+
+        <div class="main-content">
+
+            <div class="comment commentContent">
+
+                <h3>评论内容</h3>
+                <br>
+
+                <table width="600" border="1" id="commentTable">
+                    <thead>
+                        <tr>
+                            <td width=10%>评论人</td>
+                
+                            <td width=63%>评论内容</td>
+                
+                            <td width=27%>评论时间</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+            
+                    </tbody>
+                    
+                </table>
+
+            </div>
+        
+            <div class="comment commentForm">
+                <h3>评论表单</h3>
+
+                <form name="commentForm" method="post" action="" class="form-container">
+                    <div class="form-row">
+                        <div class="form-label">评论人</div>
+                        <div class="form-quotation">:</div>
+                        <div class="form-input">
+                            <input type="text" name="commentPerson" size="40">
+                        </div>
+                    </div>
+
+                    <br><br>
+                    
+                    <div class="form-row">
+                        <div class="form-label">评论内容</div>
+                        <div class="form-quotation">:</div>
+                        <div class="form-input">
+                            <textarea name="commentContent" rows="5" cols="60" maxlength="1000" id="commentContent"></textarea>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                </form>
+            
+                <input type="button" value="提交评论" onclick="addComment()" >
+                <input type="button" value="刷新评论" onclick="refreshComment()" >
+                <input type="button" value="删除评论" onclick="deleteComment()" >
+                <input type="button" value="清空评论" onclick="clearComment()" >
+
+            </div>
+
+        </div>
+    
+        <div class="footer">
+            <p>Copyright © 2024</p>
+        </div>
+    </div>
+
+</body>
+</html>
